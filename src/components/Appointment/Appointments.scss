@@ -1,0 +1,114 @@
+@import '../../styles/variables';
+
+.Appointments {
+    padding: 0.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        display: flex;
+        float: left;
+    }
+    &_title {
+        font-size: 12px;
+        font-weight: bold;
+        color: $font-color;
+    }
+    &_count {
+        margin-left: 10px;
+        height: 18px;
+        width: 18px;
+        background-color: $light-orange;
+        font-size: 12px;
+        color: $dark-orange;
+    }
+    &_List {
+        margin-top: 10px;
+        float: left;
+        width: 100%;
+        color: $font-color;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            &--img {
+                display: flex;
+                img {
+                    width: 35px;
+                    }
+            }
+        }
+        &-name {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+        }
+        &-description {
+            font-size: 12px;
+            text-align: left;
+        }
+        &-scheduled {
+            font-size: 12px;
+            text-align: left;
+        }
+        &-time {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+    .marginLeft {
+        margin-left: 5px;
+    }
+
+    &_accept {
+        height: 20px;
+        cursor: pointer;
+        fill: white;
+    }
+    &_cancel {
+        height: 20px;
+        cursor: pointer;
+        margin-left: 8px;
+        fill: white;
+    }
+    .fadeInAnimation {
+       -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

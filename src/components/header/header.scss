@@ -1,0 +1,190 @@
+@import '../../styles/variables';
+
+.Header {
+    &_Container {
+        display: flex;
+        align-items: center;
+        min-height: 90px;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+        .Followups {
+            display: flex;
+            align-items: center;
+            &_Icon {
+                height: 37px;
+            }
+            &_Labels {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+                label {
+                    margin-bottom: 0;
+                }
+                &--titleSize {
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                &--smallSize {
+                    font-size: 12px;
+                    color: $light-grey;
+                    text-align: left;
+                }
+            }
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+        &_labelColor {
+            color: $dark-blue;
+            font-size: 14px;
+        }
+    }
+    &_logo {
+        width: 100%;
+    }
+    &_rightIcon {
+        width: 12px;
+        color: $light-grey;
+        margin-left: 25px;
+        margin-right: 25px;
+        fill: $light-grey;
+        cursor: pointer;
+    }
+    &_downIcon {
+        width: 20px;
+        color: $light-grey;
+        margin-left: 25px;
+        margin-right: 25px;
+        fill: $light-grey;
+        cursor: pointer;
+    }
+    &_searchIcon {
+        height: 24px;
+        opacity: 0.4;
+    }
+    &_bellIcon {
+        height: 24px;
+        opacity: 0.8;
+    }
+    &_avatarIcon {
+        height: 24px;
+        opacity: 0.4;
+    }
+
+    &_RightSwitch {
+        min-width: 120px;
+    }
+}
+
+.circle-centered {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+  margin-right: 1rem;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-background;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid $dark-blue;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #1BC167;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $dark-blue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+  background-color: white;
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+}
+
+.on
+{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 40%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+.off
+{
+  color: $dark-blue;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 60%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on {
+  display: block;
+  color: white;
+}
+
+input:checked + .slider .off {
+  display: none;
+}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}

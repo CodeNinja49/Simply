@@ -1,0 +1,152 @@
+@import '../../styles/variables';
+
+.FollowUps {
+    padding: 20px;
+    &_Title {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    &_table {
+        margin-top: 5px;
+        font-size: 11px;
+        button {
+          font-size: 11px;
+        }
+        thead {
+            
+            color: $font-color-grey;
+            background-color: $lavendar;
+            border-radius: 20px;
+            th {
+                padding: 0.2rem;
+            }
+            .border-left-radius {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .border-right-radius {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+        tbody th, tbody td {
+            color: $font-color-drakGrey;
+            padding: 1rem 0.2rem 0.2rem 0.2rem;
+            vertical-align: middle;
+        }
+    }
+    table, thead, tr, th, td {
+        border: none !important;
+    }
+}
+
+.FollowUpDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    margin-left: 12px;
+    flex-wrap: wrap;
+
+    &_leftSide {
+        display: flex;
+        align-items: center;
+
+        &--img {
+            width: 110px;
+            height: 110px;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        &_userDetails {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2.5rem;
+            &--name {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            &--dob {
+                font-size: 16px;
+            }
+            &--age {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &_rightSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--location {
+            font-size: 13px;
+        }
+        &--status {
+            font-size: 13px;
+            color: $red;;
+        }
+    }
+}
+
+.FollowUpsModal {
+    .modal-content {
+        border-radius: 20px;
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-body {
+            margin-left: 25px;
+            margin-right: 25px;
+            border-top: 1px solid #dee2e6;
+            margin-bottom: 18px;
+        }
+    }
+    .width-responsive {
+        width: 100%;
+    }
+
+    &_body {
+        display: flex;
+        flex-direction: row;
+
+        &_leftDetails {
+            display: flex;
+            flex-direction: column;
+            flex: 0.7;
+            justify-content: space-between;
+            
+            .modal_btn {
+                height: 24px;
+                margin-top: -2px;
+                margin-right: 8px;
+            }
+        }
+        &_rightDetails {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .modal_btn {
+                height: 18px;
+                margin-top: -2px;
+                margin-right: 8px;
+            }
+        }
+
+        &--title {
+            color: $dark-blue;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &--content {
+            color: $font-color-drakGrey;
+            font-size: 13px;
+        }
+    }
+}

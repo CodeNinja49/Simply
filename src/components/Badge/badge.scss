@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+
+.Badge {
+    height: 30;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light-grey;
+    border-radius: 50%;
+    color: white;
+}

@@ -1,0 +1,159 @@
+@import '../../styles/variables';
+
+.Layout {
+
+    &_Body {
+        margin-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .SideBar {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &_listItem {
+            display: flex;
+            align-items: center;
+            height: 44px;
+            border-radius: 21px;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+            margin-bottom: 5px;
+
+            &--active {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                height: 44px;
+                border-radius: 21px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: $light-extra-blue;
+                margin-bottom: 5px;
+
+                span {
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: $dark-blue;
+                }
+
+                svg {
+                    fill: $dark-blue;
+                }
+            }
+
+            &_badge {
+                margin-left: auto !important;
+                color: white !important;
+            }
+            
+            span {
+                margin-left: 22px;
+                font-size: 14px;
+                color: $light-grey;
+            }
+        }
+        &_bottom {
+            margin-top: auto;
+            hr {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &_Profile {
+        display: flex;
+        align-items: center;
+        &_Img {
+            height: 40px;
+            width: 40px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &_details {
+            margin-left: 8px;
+        }
+
+        &_title {
+            font-size: 11px;
+            text-align: left;
+        }
+        &_name {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+    label {
+        margin-bottom: 0;
+        line-height: normal;
+    }
+
+    &_gridIcon {
+        height: 20px;
+        fill: $light-blue;
+    }
+
+    &_msgIcon {
+        height: 22px;
+        fill: $light-blue;
+    }
+    .DayPicker {
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        &-wrapper {
+            outline: none;
+        }
+        &-Month {
+            width: 100%;
+        }
+    }
+    .DayPicker-Day--today {
+        background-color: #3a7ee7;
+        color: white;
+        height: 40px;
+        width: 40px;
+    }
+    .DayPicker-Day--highlighted {
+        font-weight: bold;
+    }
+
+    &_Calendar {
+        height: 100%;
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+
+    &_Events {
+        height: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+.bg-color {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+    width: 76px;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $dark-blue;
+        opacity: 0.9;
+        border-color: $dark-blue;
+    }
+}
+
+.background-white {
+    background-color: white;
+    border-radius: 10px;
+}

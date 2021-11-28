@@ -1,0 +1,62 @@
+
+@import '../../styles/variables';
+
+.button_prime_link {
+    width: fit-content;
+    height: 40px;
+    border: 2px solid $dark-blue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: $dark-blue;
+    font-size: 15px;
+    padding: 0 8px;
+    
+    svg {
+        fill: $dark-blue;
+    }
+    &:hover {
+        background-color: $dark-blue;
+        color: white;
+        svg {
+            fill: white;
+        }
+    }
+    &:focus {
+        outline: none;
+        // box-shadow: 0 0 0 0.1rem #404a81e0;
+    }
+}
+
+.button_prime {
+    width: fit-content;
+    height: 40px;
+    // border: 2px solid $dark-blue;
+    border-color: $dark-blue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    svg {
+        fill: white;
+    }
+    &:hover {
+        opacity: 0.9;
+        color: white;
+        svg {
+            fill: white;
+        }
+    }
+    &:focus {
+        outline: none;
+        // box-shadow: 0 0 0 0.1rem #404a81e0;
+    }
+}
